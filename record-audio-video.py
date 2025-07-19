@@ -50,17 +50,14 @@ import threading
 import pyaudio
 import wave
 import tkinter as tk
+from tkinter import ttk
 from tkinter import messagebox
 
 import time
 import cv2
-from tkinter import ttk
 
 global timer_entry_field
 global start_time
-
-global thread_list
-thread_list = []
 
 """
 should one want to do this in a function rather than inline
@@ -316,8 +313,6 @@ class RecorderApp:
 
 
 def on_closing():
-    global thread_list
-
     # if messagebox.askokcancel("Exit?", "Do you want to exit this program?"):
 
     for thread in threading.enumerate():

@@ -18,6 +18,7 @@ Install these libraries after installing python3:
 The following is a sample invocation of the system:
 
  python3 record-audio-video.py
+ 
  ffmpeg_audio_video_linux.sh video.avi audio.wav 
 
 This will produce a combined audio and video file, xvideo.mp4.
